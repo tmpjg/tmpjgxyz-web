@@ -1,0 +1,69 @@
+author = "tmpjg"
+baseurl = "/"
+canonifyurls = true
+copyright = "CC BY-NC-SA 2020"
+paginate = 10
+theme = "alageek"
+title = "tmpjg.xyz"
+
+[params]
+copyright = "CC BY-NC-SA por tmpjg.xyz"
+copyrightUrl = "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"
+description = "tmpjg blog desc..."
+faviconfile = "/favicon.ico"
+latestpostcount = 10
+logofile = "/garbageman-circ.png"
+highlightjs = true
+highlightjslanguages = [ "bash", "css", "diff", "django", "javascript", "python", "yaml" ]
+toc = true
+posts_navigation = true
+progressively = true
+#flattr = "?"
+github = "https://github.com/tmpjg"
+#gitlab = "?"
+#linkedin = "?"
+#telegram = "?"
+twitter = "https://twitter.com/tmpjg2810"
+#mastodon_url = "https://mastodon.url/?"
+email = "mailATtmpjgDOTxyz"
+
+[[params.best_posts]]
+title = "Guia: Instalación de Arch LVM Crypt LUKS"
+url = "/blog/guia-instalacion-arch-lvm-crypt-luks/"
+
+[[menu.primary]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 10
+
+[[menu.primary]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 20
+
+[[menu.primary]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 30
+
+
+#[[menu.secondary]]
+#identifier = "patreon"
+#name = "b1"
+#url = "#"
+#weight = 110
+#
+#[[menu.secondary]]
+#identifier = "bmc"
+#name = "b2"
+#url = "#"
+#weight = 120
+
+#[[menu.footer]]
+#identifier = "tags"
+#name = "Tags"
+#url = "/tags/"
+#weight = 50
