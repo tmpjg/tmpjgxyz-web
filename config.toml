@@ -32,22 +32,28 @@ title = "Guia: Instalación de Arch LVM Crypt LUKS"
 url = "/blog/guia-instalacion-arch-lvm-crypt-luks/"
 
 [[menu.primary]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 10
+
+[[menu.primary]]
 identifier = "blog"
 name = "Blog"
 url = "/blog/"
-weight = 10
+weight = 20
 
 [[menu.primary]]
 identifier = "tags"
 name = "tags"
 url = "/tags/"
-weight = 20
+weight = 30
 
 [[menu.primary]]
 identifier = "about"
 name = "About"
 url = "/about/"
-weight = 30
+weight = 40
 
 
 #[[menu.secondary]]
