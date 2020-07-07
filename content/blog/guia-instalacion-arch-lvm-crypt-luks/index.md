@@ -31,19 +31,36 @@ Para poder realizar la instalación es necesario una conexión a Internet con la
 
 #### wifi
 
-Si necesitamos realizar la instalación utilizando wifi, sugiero utilizar la herramienta `wifi-menu` o `iwctl` (según la que este disponible en la imagen que utilicemos).
+Si necesitamos realizar la instalación utilizando wifi, sugiero utilizar la herramienta [`iwctl`](https://wiki.archlinux.org/index.php/Iwd#iwctl).
 Ambas herramientas nos facilitan un menú sencillo para listar las redes disponibles y conectarnos. 
 
 ```bash
 iwctl
 ```
 
-o 
+Luego, en la consola de *iwd* listamos las interfaces disponibles (en mi caso es `wlan0`):
 
 ```bash
-wifi-menu
+[iwd]# device list
+```
+Buscamos y listamos las redes disponibles:
+
+```bash
+[iwd]# station wlan0 scan
+[iwd]# station wlan0 get-networks
 ```
 
+Nos conectamos a la red: 
+
+```bash
+[iwd]# station wlan0 connect NOMBRE_DE_LA_RED_WIFI
+```
+
+Escribimos nuestra password y salimos de la consola *iwd*:
+
+```bash
+[iwd]# exit
+```
 *Nota: En mi caso, al querer conectar a un red, recibía un error al querer crear el perfil de conexión. Para poder configurar la red fue necesario desactivar la interfaz y dejar que la herramienta de conexión la active. Para esto tuve que ejecutar `ip set wlan0 down`.* 
 
 *Nota II: Sugiero antes de continuar la instalación que probemos nuestra conexión a Internet con un `ping kernel.org`. Si nos conectamos a la red wifi pero seguimos sin Internet, es posible que la interfaz no haya solicitado una ip al router. Esto podemos verificarlo ejecutando `ip a`. Si necesitamos forzar la solicitud de una ip podemos ejecutar `dhcpcd`.*
@@ -271,7 +288,7 @@ pacman -S linux-lts linux-lts-headers linux linux-headers
 
 #### Network 
 
-Para poder utilizar nuestros dispositivos de red y controlarlos necesitamos la herramienta [`networkmanager`](https://wiki.archlinux.org/index.php/NetworkManager_(Espa%C3%B1ol))  y si ademas vamos a utilizar wifi es necesario instalar los paquetes [`wpa_supplicant`](https://wiki.archlinux.org/index.php/Wpa_supplicant) (*autenticacion wep y wpa*), [`wireless_tools`](https://www.archlinux.org/packages/core/x86_64/wireless_tools/)(*kit de herramientas para controlar nuestro wifi*), [`netctl`](https://www.archlinux.org/packages/core/any/netctl/)(*administra perfiles de conexión*). 
+Para poder utilizar nuestros dispositivos de red y controlarlos necesitamos la herramienta [`networkmanager`](https://wiki.archlinux.org/index.php/NetworkManager_(Espa%C3%B1ol))  y si ademas vamos a utilizar wifi es necesario instalar los paquetes [`wpa_supplicant`](https://wiki.archlinux.org/index.php/Wpa_supplicant) (*autenticacion wep y wpa*), [`wireless_tools`](https://www.archlinux.org/packages/core/x86_64/wireless_tools/)(*kit de herramientas para controlar nuestro wifi*), [`iwd`](https://www.archlinux.org/packages/community/x86_64/iwd/)(*administra perfiles de conexión*). 
 También recomiendo instalar el paquete [`dialog`](https://www.archlinux.org/packages/core/x86_64/dialog/) que sirve para generar cuadros de dialogo en la terminal(muy útil si necesitamos conectarnos a la red wifi cuando rompamos la interfaz).
 
 *Nota: Aunque nuestro equipo no tenga wifi, sugiero instalar estos paquetes de todos modos. No interfieren en el rendimiento de nuestro sistema y pueden ser de utilidad si en algún momento queremos utilizar una placa wifi.*
