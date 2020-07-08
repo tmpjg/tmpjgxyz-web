@@ -6,6 +6,10 @@ paginate = 10
 theme = "alageek"
 title = "tmpjg.xyz"
 
+#extra configs
+DefaultContentLanguage = "es"
+languageCode = "es"
+
 [params]
 copyright = "CC BY-NC-SA por tmpjg.xyz"
 copyrightUrl = "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"
@@ -26,6 +30,10 @@ github = "tmpjg"
 twitter = "tmpjg2810"
 #mastodon_url = "https://mastodon.url/?"
 email = "mailATtmpjgDOTxyz"
+
+
+
+
 
 [[params.best_posts]]
 title = "Guia: Instalación de Arch LVM Crypt LUKS"
@@ -77,3 +85,5 @@ weight = 40
 
 [permalinks]
   blog = "/blog/:year/:month/:day/:title/"
+
+
