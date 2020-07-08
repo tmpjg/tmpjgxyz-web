@@ -14,7 +14,7 @@ Empecemos...
 
 ## Inicio
 
-Lo primero es generar un usb desde el que podamos iniciar el sistema. En este [link](/corregir-este-link) hay una guia de como hacerlo desde linux con el comando `dd`. Si no tenemos esta herramienta sugiero utilizar [balena-etcher](https://www.balena.io/etcher/). 
+Lo primero es generar un usb desde el que podamos iniciar el sistema. En este [post](/blog/2020/07/04/crear-usb-booteable-desde-linux-con-dd/) hay una guia de como hacerlo desde linux con el comando `dd`. Si no tenemos esta herramienta sugiero utilizar [balena-etcher](https://www.balena.io/etcher/). 
 Cuando tengamos listo nuestro usb, podemos iniciar la instalación.
 
 ### Distribución del teclado

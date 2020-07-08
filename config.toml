@@ -29,7 +29,7 @@ email = "mailATtmpjgDOTxyz"
 
 [[params.best_posts]]
 title = "Guia: Instalación de Arch LVM Crypt LUKS"
-url = "/blog/guia-instalacion-arch-lvm-crypt-luks/"
+url = "/blog/2020/07/04/crear-usb-booteable-desde-linux-con-dd/"
 
 [[menu.primary]]
 identifier = "home"
@@ -73,3 +73,7 @@ weight = 40
 #name = "Tags"
 #url = "/tags/"
 #weight = 50
+
+
+[permalinks]
+  blog = "/blog/:year/:month/:day/:title/"
