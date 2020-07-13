@@ -4,3 +4,5 @@ date: 2020-07-04T16:15:28-03:00
 ---
 
 Sysadmin y DevOps Argentino; Entusiasta del Software Libre y GNU/Linux; Bash Scripts; Python; Debian; Arch; intento de músico y de técnico de sonido; saco algunas fotos.
+
+GPG: [`3B77CAF76F9545B8`](./3B77CAF76F9545B8.gpg)

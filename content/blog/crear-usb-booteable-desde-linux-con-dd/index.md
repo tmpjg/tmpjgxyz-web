@@ -13,14 +13,14 @@ El primer requisito es descargar una imagen `.iso` (Sugiero probar con el net-in
 
 Luego en una terminal ejecutamos: 
 ```
-sudo dd bs=4M if=${ISO} of=${/dev/sdX} oflag=sync status=progress
+sudo dd bs=4M if=<ISO> of=</dev/sdX> oflag=sync status=progress
 ```
 
-![dd_what_have_i_done.jpg](./dd_what_have_i_done.jpg)
+![dd_what_have_i_done.jpg](/blog/2020/07/04/crear-usb-booteable-desde-linux-con-dd/dd_what_have_i_done.jpg)
 
 Paso a explicar:
 * `bs=4M`: Indica cuantos Bytes de escriben y leen a la ves. (ibs y obs) 
-* `if=${ISO}` y `of=$[/dev/sdX]`: `if=` indica el origen del archivo y `of=` el destino.
+* `if=<ISO>` y `of=</dev/sdX>`: `if=` indica el origen del archivo y `of=` el destino.
 * `oflag=sync`: Limpia los buffers del filesistem (esto nos asegura que el contenido se copie antes de quitar el usb)
 * `status=progress`: Nos indicara el proceso de la copia en tiempo real. 
 

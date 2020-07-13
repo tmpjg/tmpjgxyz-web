@@ -10,6 +10,8 @@ Ademas, esta guia considera la necesidad de cifrar nuestros discos con **luks** 
 
 *Nota: Esta guia esta pensada para realizar la instalación sobre Hardware *UEFI*.*
 
+![i_use_arch_btw.png](/blog/2020/07/06/guia-instalación-de-arch-lvm-crypt-luks/i_use_arch_btw.png)
+
 Empecemos... 
 
 ## Inicio
@@ -515,3 +517,5 @@ Para finalizar la instalación ejecutamos el comando `exit` y luego `shutdown no
 [TRIM](https://es.wikipedia.org/wiki/TRIM)
 
 [lvm para torpes (parte 2)](https://blog.inittab.org/administracion-sistemas/lvm-para-torpes-ii/)
+
+[Arch Linux: Is it a meme? (imagen)](https://www.youtube.com/watch?v=VO9R_WFs9Zc)
