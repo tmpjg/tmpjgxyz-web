@@ -1,5 +1,5 @@
 author = "tmpjg"
-baseurl = "/"
+baseurl = "https://tmpjg.xyz/"
 canonifyurls = true
 copyright = "CC BY-NC-SA 2020"
 paginate = 10
