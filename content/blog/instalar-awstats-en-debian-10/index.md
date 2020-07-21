@@ -74,7 +74,7 @@ Las configuraciones de **Awstats** se encuentran en el path `/etc/awstats`. Ahí
 Para crear una configuración de un nuevo sitio copiamos el archivo `awstats.conf` y le damos un nuevo nombre en formato `awstats.dominio.ltd.conf`. Por ejemplo, en mi caso: `awstats.tmpjg.xyz.conf`.
 Dentro del nuevo archivo de configuración modificamos los siguientes parámetros: 
 
-```conf
+```bash
 # Path en donde se almacena el log.
 LogFile="/var/log/nginx/dominio.com.access.log"
 
@@ -105,7 +105,7 @@ chown www-data:www-data /var.lib.awstats/dominio.com
 
 Por ultimo, dentro del archivo `awstats.conf.local` copiamos los siguientes parámetros globales: 
 
-```conf
+```bash
 # Para que awstats no realice un lookup reverso de las ips
 DNSLookup = 0
 
@@ -125,7 +125,7 @@ Si bien podríamos crear un cron para que se ejecute automáticamente, recomiend
 Para hacer esto tenemos que agregar el comando de actualización en el `prerotate` de la configuración de *LogRotate*. Debería quedar así: 
 
 
-```conf
+```bash
 /var/log/nginx/*.log{
         daily
         missingok
@@ -157,7 +157,7 @@ logrotate -f /etc/logrotate.d/nginx
 
 Por ultimo tenemos que crear un acceso web a *Awstats* para poder ver nuestras estadísticas. En mi caso elegí crear un virtual host dedicado para cada dominio de mi servidor. La configuración: 
 
-```conf
+```bash
 server {
     server_name stats.dominio.com;
 

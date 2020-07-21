@@ -18,7 +18,7 @@ faviconfile = "/favicon.ico"
 latestpostcount = 10
 logofile = "/garbageman-circ.png"
 highlightjs = true
-highlightjslanguages = [ "bash", "css", "diff", "django", "javascript", "python", "yaml" ]
+highlightjslanguages = [ "bash", "css", "diff", "django", "javascript", "python", "yaml", "conf", "bash" ]
 toc = true
 posts_navigation = true
 progressively = true
@@ -36,8 +36,8 @@ email = "mailATtmpjgDOTxyz"
 
 
 [[params.best_posts]]
-title = "Guia: Instalación de Arch LVM Crypt LUKS"
-url = "/blog/2020/07/04/crear-usb-booteable-desde-linux-con-dd/"
+title = "Guia: Instalar Arch Linux con LVM Crypt LUKS"
+url = "/blog/2020/07/06/guia-instalar-arch-linux-con-lvm-crypt-luks/"
 
 [[menu.primary]]
 identifier = "home"

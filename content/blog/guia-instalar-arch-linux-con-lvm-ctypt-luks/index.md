@@ -1,5 +1,5 @@
 ---
-title: "Guia: Instalación de Arch LVM Crypt LUKS"
+title: "Guia: Instalar Arch Linux con LVM Crypt LUKS"
 date: 2020-07-06T13:00:00-03:00
 tags: ["Linux", "Arch", "LVM", "LUKS", "Crypt","GRUB", "Gnome", "Xfce", "Kde"]
 ---
